@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPTours | Agence de voyage</title>
+
+    <meta name="description"
+        content="VPTours, votre agence de voyage experte. Découvrez des destinations uniques, des circuits sur mesure et réservez vos prochaines vacances inoubliables.">
+    <meta name="keywords" content="voyage, agence de voyage, vacances, circuit, tour opérateur, VPTours">
+    <meta name="author" content="VPTours">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VPTours | Agence de voyage">
+    <meta property="og:description"
+        content="Prêt pour votre prochaine aventure ? Explorez le monde avec VPTours, votre partenaire voyage de confiance.">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="VPTours | Agence de voyage">
+    <meta property="twitter:description" content="Découvrez nos meilleures offres de circuits et séjours avec VPTours.">
+
+    <link rel="icon" type="image/png" href="../images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="../images/favicons/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=DM+Serif+Text:ital@0;1&family=Italiana&family=Jersey+10&family=Jost:ital,wght@0,100..900;1,100..900&family=Julee&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <nav class="bg-gray-50 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+
+                <!-- logo -->
+
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="../index.html" class="flex items-center gap-2">
+                        <img src="../images/logo.png" alt="Logo" class="w-34 h-24">
+                    </a>
+                </div>
+
+                <div class="hidden md:flex flex-1 justify-center px-8">
+                    <div class="relative w-full max-w-md group">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400 group-focus-within:text-black transition-colors"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Où voulez-vous aller ?"
+                            class="block w-full bg-gray-100 hover:border-gray-400 border-transparent border rounded-full py-2.5 pl-10 pr-3 text-sm placeholder-gray-500 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-black focus:border-transparent transition-all">
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-6">
+
+                    <div class="group static">
+                        <button
+                            class="flex hover:ring-blue-800 hover:ring-2 cursor-pointer items-center gap-1 text-gray-600 hover:text-blue-800 font-medium py-4 px-4 transition-colors">
+                            Destinations
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div
+                            class="bg-gray-50 absolute left-0 right-0 top-full w-full bg-white border-y border-gray-100 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="max-w-6xl mx-auto grid grid-cols-12 gap-8 p-8">
+
+                                <div class="col-span-7 flex flex-col justify-center">
+                                    <h3 class="text-2xl font-bold text-slate-900 mb-4">Explorez nos destinations phares
+                                    </h3>
+                                    <p class="text-gray-500 mb-6 max-w-lg">
+                                        Découvrez des lieux sélectionnés pour leur authenticité et leur prix accessible.
+                                    </p>
+
+                                    <div class="grid grid-cols-2 gap-4 mb-8">
+                                        <a href="../pages/montagne.html"
+                                            class="flex items-center p-3 hover:ring-blue-800 hover:ring-2 group/item">
+                                            <span
+                                                class="text-sm font-semibold text-gray-800 group-hover/item:text-blue-800">Les
+                                                2 Alpes</span>
+                                        </a>
+                                        <a href="../pages/opera.html"
+                                            class="flex items-center p-3 hover:ring-blue-800 hover:ring-2 group/item">
+                                            <span
+                                                class="text-sm font-semibold text-gray-800 group-hover/item:text-blue-800">L'Opéra
+                                                Garnier</span>
+                                        </a>
+                                        <a href="../pages/colisee.html"
+                                            class="flex items-center p-3 hover:ring-blue-800 hover:ring-2 group/item">
+                                            <span
+                                                class="text-sm font-semibold text-gray-800 group-hover/item:text-blue-800">Le
+                                                Colisée</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-span-5 relative h-64 overflow-hidden rounded-2xl shadow-inner">
+                                    <img src="../images/lieux/2alpes/2alpes1.webp" alt="Destinations"
+                                        class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                                    <span
+                                        class="absolute bottom-4 left-4 text-white font-bold tracking-wider uppercase text-xs">Offre
+                                        du moment : -20% sur la montagne</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../pages/reservation.html"
+                        class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-blue-800 hover:shadow-lg transform active:scale-95 transition-all">
+                        Réserver
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-600 p-2">
+                        <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-blue-600 text-white py-2 overflow-hidden">
+        <div id="promo-banner"
+            class="dm text-center text-lg font-bold uppercase tracking-wider transition-all duration-500 opacity-100">
+            Promotion -80%
+        </div>
+    </div>
+
+    <main>
+        <section class="relative w-full h-[350px] overflow-hidden flex items-center justify-center">
+
+            <img src="../images/lieux/2alpes/2alpes3.jpg" alt="photo 2 alpes"
+                class="absolute inset-0 h-full w-full object-cover">
+
+            <div class="absolute inset-0 bg-black/30 z-10"></div>
+
+            <div class="relative z-20 text-center px-4">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">
+                    Les 2 Alpes
+                </h2>
+            </div>
+
+        </section>
+        <div id="filarial" class="w-full bg-gray-50 border-b border-gray-200">
+            <nav class="max-w-7xl mx-auto px-4 py-3" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-black">
+                    <li>
+                        <a href="../index.html" class="hover:text-blue-800 transition-colors flex items-center gap-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            Accueil
+                        </a>
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+
+                    <li>
+                        <a href="reservation.html" class="hover:text-blue-800 transition-colors">Destinations</a>
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </li>
+
+                    <li class="font-bold text-blue-600" aria-current="page">
+                        Les 2 Alpes
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <main>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-2 h-[300px] md:h-[450px] rounded-2xl overflow-hidden">
+
+                    <div class="col-span-2 row-span-2 relative group cursor-pointer">
+                        <img src="../images/lieux/2alpes/2alpes1.webp" class="w-full h-full object-cover"
+                            alt="Vue panoramique des 2 Alpes">
+                        <div class="absolute inset-0 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+
+                    <div class="hidden md:block col-span-1 row-span-1 relative group cursor-pointer">
+                        <img src="../images/lieux/2alpes/2alpes2.webp" class="w-full h-full object-cover"
+                            alt="Le Glacier à 3600m">
+                        <div class="absolute inset-0 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+
+                    <div class="hidden md:block col-span-1 row-span-1 relative group cursor-pointer">
+                        <img src="../images/lieux/2alpes/2alpes3.jpg" class="w-full h-full object-cover"
+                            alt="Snowpark mondialement connu">
+                        <div class="absolute inset-0 group-hover:bg-black/10 transition-colors"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+
+                    <div class="lg:col-span-2 space-y-8">
+                        <div>
+                            <h1 class="text-3xl font-black text-gray-900 tracking-tight">Les 2 Alpes : Forfait de ski et
+                                accès Glacier</h1>
+                            <div class="flex items-center gap-4 mt-4 text-sm">
+                                <div class="flex items-center gap-1">
+                                    <span class="bg-blue-600 p-1 rounded-full"></span>
+                                    <span class="bg-blue-600 p-1 rounded-full"></span>
+                                    <span class="bg-blue-600 p-1 rounded-full"></span>
+                                    <span class="bg-blue-600 p-1 rounded-full"></span>
+                                    <span class="bg-blue-600/30 p-1 rounded-full"></span>
+                                    <span class="font-bold ml-1">850 avis</span>
+                                </div>
+                                <span class="text-gray-400">•</span>
+                                <span class="text-gray-600 underline font-medium">Isère, Alpes Françaises</span>
+                            </div>
+                        </div>
+
+                        <hr class="border-gray-100">
+
+                        <div class="prose prose-slate max-w-none">
+                            <h3 class="text-xl font-bold">À propos de cette destination</h3>
+                            <p class="text-gray-600 leading-relaxed mt-4">
+                                Culminant à 3600 mètres d'altitude, Les 2 Alpes est une station de renommée
+                                internationale.
+                                Grâce à son glacier, profitez d'une neige garantie et d'un dénivelé exceptionnel de 2300
+                                mètres sans jamais déchausser.
+                                Un paradis pour le ski de piste, le freestyle et l'après-ski animé.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
+                            <div class="flex gap-4">
+                                <div class="text-gray-900">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-sm">Altitude : 1650m - 3600m</p>
+                                    <p class="text-xs text-gray-500">Neige garantie grâce au glacier</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="text-gray-900">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-sm">200 km de pistes</p>
+                                    <p class="text-xs text-gray-500">42 remontées mécaniques modernes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-1">
+                        <div class="sticky top-10 bg-white border border-gray-200 rounded-2xl shadow-xl p-6">
+                            <p class="text-gray-500 text-sm font-medium">Forfait journée à partir de</p>
+                            <div class="flex items-baseline gap-1 mb-6">
+                                <span class="text-3xl font-black text-gray-900">60,00€</span>
+                                <span class="text-gray-500 text-sm">par adulte</span>
+                            </div>
+
+                            <form class="space-y-4">
+                                <div
+                                    class="border rounded-xl p-3 border-gray-300 hover:border-black transition-colors cursor-pointer">
+                                    <label class="block text-[10px] font-black uppercase text-gray-500">Premier jour de
+                                        ski</label>
+                                    <input type="date" class="w-full text-sm outline-none bg-transparent font-semibold">
+                                </div>
+
+                                <div
+                                    class="border rounded-xl p-3 border-gray-300 hover:border-black transition-colors cursor-pointer">
+                                    <label class="block text-[10px] font-black uppercase text-gray-500">Durée
+                                        (jours)</label>
+                                    <input type="number" value="1" min="1" max="15"
+                                        class="w-full text-sm outline-none bg-transparent font-semibold">
+                                </div>
+
+                                <button type="submit"
+                                    class="cursor-pointer w-full bg-blue-600 hover:bg-blue-800 text-white font-black py-4 transition-all text-sm uppercase tracking-wide shadow-md">
+                                    Vérifier la disponibilité
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="avis" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 font-sans border-t border-gray-100">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+                    <div class="lg:col-span-1 space-y-6">
+                        <h2 class="text-2xl font-black text-gray-900">Avis skieurs</h2>
+                        <div class="flex items-center gap-4">
+                            <div class="text-5xl font-black text-blue-600">4.7</div>
+                            <div>
+                                <div class="flex text-blue-600 mb-1">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg class="w-5 h-5 text-gray-200 fill-current" viewBox="0 0 20 20">
+                                        <path
+                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                                <p class="text-sm font-bold text-gray-500">850 avis vérifiés</p>
+                            </div>
+                        </div>
+
+                        <button
+                            class="cursor-pointer w-full py-3 px-4 border-2 border-blue-600 text-blue-600 font-bold rounded-xl hover:bg-blue-600 hover:text-white transition-all duration-300">
+                            Donner mon avis
+                        </button>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-10">
+                        <div class="pb-10 border-b border-gray-100">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 font-bold">
+                                        AL</div>
+                                    <div>
+                                        <p class="font-bold text-sm text-gray-900">Arnaud Lefebvre</p>
+                                        <p class="text-[10px] text-gray-400 uppercase font-black">Belgique • Janvier
+                                            2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="font-bold text-gray-900 mb-2">Domaine incroyable, surtout en haut !</h4>
+                            <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                                La neige sur le glacier à 3600m est juste parfaite. La redescente sur la station est
+                                longue et agréable. Seul bémol, le vent peut être fort sur les crêtes, mais l'ambiance
+                                au village compense largement !
+                            </p>
+                            <button
+                                class="cursor-pointer text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors flex items-center gap-1">
+                                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.708a2 2 0 011.983 2.284l-1.347 8.974A2 2 0 0117.362 23H7a2 2 0 01-2-2V9a2 2 0 01.447-1.265l4.473-5.591a1 1 0 011.542.103L12.5 5.5A11 11 0 0114 10z" />
+                                </svg>
+                                Utile (18)
+                            </button>
+                        </div>
+
+                        <button
+                            class="cursor-pointer text-sm font-black text-gray-900 underline hover:text-blue-600 transition-colors">
+                            Afficher plus d'avis
+                        </button>
+                    </div>
+                </div>
+            </section>
+            </section>
+            <section class="bg-gray-50 py-12 font-sans">
+                <div class="max-w-4xl px-6">
+
+                    <div class="flex justify-between items-end mb-6">
+                        <div>
+                            <h2 class="text-xl font-black text-gray-900 tracking-tight">Ces destinations pourraient vous
+                                plaire</h2>
+                            <p class="text-xs text-gray-500 mt-1">Basé sur vos recherches récentes</p>
+                        </div>
+                        <a href="#"
+                            class="text-xs font-bold text-blue-600 underline hover:text-blue-800 transition-colors cursor-pointer">Voir
+                            tout</a>
+                    </div>
+
+                    <div class="flex overflow-x-auto no-scrollbar gap-5 pb-4">
+
+                        <a href="colisee.html" class="min-w-[220px] md:min-w-[260px] group block">
+                            <div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm bg-gray-100">
+                                <img src="../images/lieux/colisee/colise1.jpg"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                                    alt="Rome">
+                                <button
+                                    class="absolute top-2 right-2 p-1.5 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white transition-colors">
+                                    <svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-3 space-y-1">
+                                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Rome, Italie
+                                </p>
+                                <h3
+                                    class="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors truncate">
+                                    Le Colisée : Visite des Arènes</h3>
+                                <div class="flex items-center gap-1">
+                                    <div class="flex">
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-gray-200 rounded-full border border-gray-200 ml-0.5"></span>
+                                    </div>
+                                    <span class="text-[10px] text-gray-500 font-medium">1 420 avis</span>
+                                </div>
+                                <p class="text-sm font-black text-gray-900 mt-1">Dès 45,00€</p>
+                            </div>
+                        </a>
+
+                        <a href="montagne.html" class="min-w-[220px] md:min-w-[260px] group block">
+                            <div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-sm bg-gray-100">
+                                <img src="../images/lieux/2alpes/2alpes3.jpg"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                                    alt="Alpes">
+                                <button
+                                    class="cursor-pointer absolute top-2 right-2 p-1.5 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white transition-colors">
+                                    <svg class="w-4 h-4 text-gray-900" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-3 space-y-1">
+                                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Isère, France
+                                </p>
+                                <h3
+                                    class="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition-colors truncate">
+                                    Les 2 Alpes : Pack Ski & Détente</h3>
+                                <div class="flex items-center gap-1">
+                                    <div class="flex">
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                        <span
+                                            class="w-2.5 h-2.5 bg-blue-600 rounded-full border border-blue-600 ml-0.5"></span>
+                                    </div>
+                                    <span class="text-[10px] text-gray-500 font-medium">856 avis</span>
+                                </div>
+                                <p class="text-sm font-black text-gray-900 mt-1">Dès 120,00€</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 pt-16 pb-8 text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+
+                <div class="space-y-6">
+                    <p class="text-sm leading-relaxed text-gray-500">
+                        Votre partenaire de confiance pour des expériences de voyage authentiques. Explorez le monde
+                        avec sérénité et confort.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:border-blue-800 hover:text-blue-800 hover:shadow-sm transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:border-blue-800 hover:text-blue-800 hover:shadow-sm transition-all">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-6">Voyager</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="../pages/montagne.html"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">Les 2
+                                Alpes</a>
+                        </li>
+                        <li><a href="../pages/opera.html"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">L'opéra
+                                Garnier</a>
+                        </li>
+                        <li><a href="../pages/colisee.html"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">Le
+                                Colisée</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-6">Informations</h4>
+                    <ul class="space-y-4 text-sm font-medium">
+                        <li><a href="#"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">Contactez-nous</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">F.A.Q</a></li>
+                        <li><a href="#"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">Assurances</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:underline transition-all hover:text-blue-800 cursor-pointer">Mentions
+                                légales</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-6">Newsletter</h4>
+                    <p class="text-sm text-gray-500 mb-4">Inscrivez-vous pour recevoir nos offres privées.</p>
+                    <div class="space-y-2">
+                        <input type="email" placeholder="votre@email.com"
+                            class="w-full bg-white border border-gray-200 rounded-lg px-4 py-2 text-sm focus:ring-2 focus:ring-blue-800 focus:border-transparent outline-none transition-all">
+                        <button
+                            class="w-full cursor-pointer bg-blue-700 hover:bg-blue-800 text-white text-sm font-bold py-2 rounded-lg shadow-sm hover:shadow transition-all">
+                            S'abonner
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-gray-600">
+                <p>© 2026 VPTours. Agence de voyage.</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+<script src="../main.js"></script>
+
+</html>
